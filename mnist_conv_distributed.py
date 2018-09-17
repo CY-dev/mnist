@@ -32,7 +32,7 @@ from clusterone import get_data_path, get_logs_path
 # For convenience we use a clusterone wrapper (get_data_path below) to be able
 # to switch from local to clusterone without cahnging the code.
 
-PATH_TO_LOCAL_LOGS = os.path.expanduser('~/Documents/mnist/logs')
+PATH_TO_LOCAL_LOGS = os.path.expanduser('~/clusterone/mnist/logs')
 ROOT_PATH_TO_LOCAL_DATA = os.path.expanduser('~/Documents/data/')
 
 # Configure  distributed task
@@ -64,7 +64,7 @@ flags.DEFINE_string("worker_hosts", worker_hosts,
 # Training related flags
 flags.DEFINE_string("data_dir",
                     get_data_path(
-                        dataset_name = "malo/mnist", #all mounted repo
+                        dataset_name = "cyi/mnist", #all mounted repo
                         local_root = ROOT_PATH_TO_LOCAL_DATA,
                         local_repo = "mnist",
                         path = 'data'
