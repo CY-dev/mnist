@@ -64,7 +64,7 @@ flags.DEFINE_string("worker_hosts", worker_hosts,
 # Training related flags
 flags.DEFINE_string("data_dir",
                     get_data_path(
-                        dataset_name = "cyi/mnist", #all mounted repo
+                        dataset_name = "cyi/cyi-datasets", #all mounted repo
                         local_root = ROOT_PATH_TO_LOCAL_DATA,
                         local_repo = "mnist",
                         path = 'data'
